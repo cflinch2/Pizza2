@@ -16,9 +16,9 @@ public class PizzaApp implements EntryPoint {
 	public void onModuleLoad() {
 		FlowPanel panel = new FlowPanel();
 		
-		Label helloWorld = new Label("Hello, world!");
+		PizzaView pizzaView = new PizzaView();
 		
-		panel.add(helloWorld);
+		panel.add(pizzaView);
 		
 		RootLayoutPanel.get().add(panel);
 		RootLayoutPanel.get().setWidgetTopBottom(panel, 10.0, Unit.PX, 10.0, Unit.PX);
